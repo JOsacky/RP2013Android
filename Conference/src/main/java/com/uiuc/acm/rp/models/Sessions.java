@@ -4,16 +4,15 @@ import java.util.Date;
 public class Sessions {
 
     private Date startTime;
-    private URL webUrl;
-    private String id;
+    private Date endTime;
     private Speakers speakers;
+    private String id;
     private String title;
     private String eventId;
     private String space;
-    private Date endTime;
-    private URL otherUrl;
     private String talkSummary;
-    
+    private URL otherUrl;
+    private URL webUrl;
     
 	public Date getStartTime() {
 		return startTime;
@@ -21,23 +20,23 @@ public class Sessions {
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
-	public URL getWebUrl() {
-		return webUrl;
+	public Date getEndTime() {
+		return endTime;
 	}
-	public void setWebUrl(URL webUrl) {
-		this.webUrl = webUrl;
-	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
 	}
 	public Speakers getSpeakers() {
 		return speakers;
 	}
 	public void setSpeakers(Speakers speakers) {
 		this.speakers = speakers;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getTitle() {
 		return title;
@@ -57,11 +56,11 @@ public class Sessions {
 	public void setSpace(String space) {
 		this.space = space;
 	}
-	public Date getEndTime() {
-		return endTime;
+	public String getTalkSummary() {
+		return talkSummary;
 	}
-	public void setEndTime(Date endTime) {
-		this.endTime = endTime;
+	public void setTalkSummary(String talkSummary) {
+		this.talkSummary = talkSummary;
 	}
 	public URL getOtherUrl() {
 		return otherUrl;
@@ -69,12 +68,10 @@ public class Sessions {
 	public void setOtherUrl(URL otherUrl) {
 		this.otherUrl = otherUrl;
 	}
-	public String getTalkSummary() {
-		return talkSummary;
+	public URL getWebUrl() {
+		return webUrl;
 	}
-	public void setTalkSummary(String talkSummary) {
-		this.talkSummary = talkSummary;
+	public void setWebUrl(URL webUrl) {
+		this.webUrl = webUrl;
 	}
-
-
 }
